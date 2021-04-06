@@ -11,15 +11,7 @@ public class AccessBSTApp {
 
     public AccessBSTApp(){}
 
-   /**
-    * The AccessBSTApp constructor takes a text file as an argumentsBSTApp constructor takes a text file as an argument
-    * i.e "oklist.txt"
-    * The text file contains a list of student numbers coupled with names
-    * then adds the student data to the Binary Search tree
-    * using StudentId as a key
-    * objects of StudentData class are added as data items to the BST nodes each time
-    * @see StudentData*/
-    
+
     public AccessBSTApp(String fileName){
         StudentTree = new BinarySearchTree();
         String StudentID;
@@ -40,22 +32,13 @@ public class AccessBSTApp {
 
 
     }
-    
-    /**
-     *takes student number as an argument
-     * then outputs the corresponding student name 
-     **/
 
     public void printStudent(String StudentID){
         BinaryTreeNode Node;
         Node = StudentTree.find(new StudentData(StudentID));
         System.out.println(Node.toString());
     }
- 
-   /**
-    * prints all student numbers and corresponding names
-    * in any particular order
-    **/
+
 
 
     public void printAllStudents(){
