@@ -1,6 +1,6 @@
 
 
-public class StudentData implements Comparable<StudentData>{
+public class StudentData  Comparable<StudentData>{
     String StudentID;
     String StudentName;
 

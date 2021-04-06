@@ -43,7 +43,7 @@ public class AccessBSTApp {
 
     public void printAllStudents(){
 
-        return StudentTree.preOrder();
+        StudentTree.preOrder();
     }
 
 }

@@ -15,7 +15,7 @@ public class AccessArrayApp {
 
 
     public AccessArrayApp(String fileName){
-        Students =  new String[5000];
+        Students =  String[5000];
         try {
             Scanner read = new Scanner(new File(fileName));
             for(int i=0; i<5000; i++)

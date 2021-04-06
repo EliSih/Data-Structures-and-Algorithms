@@ -10,7 +10,7 @@ BINDIR=bin
 $(BINDIR)/%.class:$(SRCDIR)/%.java
 	$(JAVAC) -d $(BINDIR)/ -cp $(BINDIR) $<
  
-CLASSES=AccessArrayApp.class 
+CLASSES=BinaryTreeNode.class  BTQueueNode.class BTQueue.class  BinaryTree.class BinarySearchTree.class StudentData.class AccessArrayApp.class AccessBSTApp.class  
 CLASS_FILES=$(CLASSES:%.class=$(BINDIR)/%.class)
 
 default: $(CLASS_FILES)
@@ -20,4 +20,8 @@ clean:
 	
 runarray: $(CLASS_FILES)
 	java -cp $(BINDIR) AccessArrayApp 
+
+runbst: $(CLASS_FILES) 
+	java -cp $(BINDIR) AccessBSTApp 
+	 
 	      	
