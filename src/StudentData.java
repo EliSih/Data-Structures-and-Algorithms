@@ -1,14 +1,13 @@
 
 
 public class StudentData implements Comparable<StudentData>{
-   /**
-    *This class creates comparable objects containing student details
-    * i.e Student number and corresponding student identity
-    * objects of this class are added as data items to
-    * the nodes of the binary search tree class
-    * this makes comparisons between data items intuitive
-    * @see AccessArrayApp*/	
-
+    /**
+     *objects of this class are used as data items
+     * the data items exist within Binary Tree Nodes in the binary serach tree
+     * @see AccessBstApp
+     * this class also implemets the comparable interface
+     * this defines parameters for comparing objects of StudentData
+     * Student number is used as a comparasion parameter*/
     String StudentID;
     String StudentName;
 
@@ -36,9 +35,9 @@ public class StudentData implements Comparable<StudentData>{
     }
 
     public String toString(){
-        return StudentName;
+        return StudentID + " " +StudentName;
     }
 
-
+//    public String printStudent(String ID)
 
 }
